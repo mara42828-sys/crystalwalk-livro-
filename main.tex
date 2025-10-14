@@ -1,0 +1,70 @@
+% main.tex — Livro completo CrystalWalk
+
+\documentclass[12pt,openright,oneside]{book}
+
+% --- Configurações e pacotes ---
+\input{preambulo}
+
+\begin{document}
+
+% --- Capa ---
+\input{capa}
+\MakeCover
+
+% --- Página de créditos ---
+\cleardoublepage
+\thispagestyle{empty}
+\vspace*{3cm}
+\begin{center}
+\small
+\textbf{CRYSTAL WALK}\\
+{\it Metodologia, Aplicação e Impactos no Ensino de Materiais — Guia do Professor com Atividades e Quizzes}\\[1em]
+Autores: Aline Bueno da Silva Cruz, Ana Luiza Rosa Parmelston, Mara Rúbia Gomes Carvalho,\\
+Natália Aparecida Santos Souza e Alex Manhone.\\[1em]
+Edição: 1ª edição — 2025\\[1em]
+ISBN: \textit{(inserir número, se houver)}\\[2em]
+\end{center}
+
+\noindent\textbf{Nota:} Este guia adapta e organiza o conteúdo do manual técnico \emph{CrystalWalk: modelagem de estruturas cristalinas às suas mãos} como material didático e roteiro para aulas com atividades práticas e quizzes.
+
+\clearpage
+
+% --- Sumário ---
+\pagenumbering{roman}
+\setcounter{page}{1}
+\tableofcontents
+\cleardoublepage
+
+% --- Corpo do livro ---
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{capitulos/cap1_guia_prof}
+\input{capitulos/cap2_o_que_e_um_cristal}
+\input{capitulos/cap3_redes_bravais}
+\input{capitulos/cap4_parametros_rede}
+\input{capitulos/cap5_estruturas_celulas}
+\input{capitulos/cap6_miller}
+\input{capitulos/cap7_interface_crystal}
+\input{capitulos/cap8_metodologia_avaliacao}
+\input{capitulos/cap9_projetos}
+
+% --- Apêndice ---
+\appendix
+\input{capitulos/apendice_pdf}
+
+% --- Sobre os autores ---
+\input{capitulos/sobre_autores}
+
+% --- Referências ---
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Referências}
+\begin{thebibliography}{9}
+\bibitem{candioto2022}
+K.\,C.\,G. Candioto \& G.\,L.\,M. Monteiro,
+\emph{CrystalWalk: modelagem de estruturas cristalinas às suas mãos},
+Edições Brasil / UniEditoras, 2022.
+\end{thebibliography}
+
+\end{document}
