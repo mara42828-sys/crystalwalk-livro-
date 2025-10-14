@@ -1,0 +1,13 @@
+\chapter{Estruturas cristalinas e células unitárias}
+
+\section{Conteúdo}
+Tipos de células, exemplos (cúbico simples, CCC, CFC, hexagonal compacta).
+
+\section{Atividade guiada}
+\begin{lessonplan}
+\textbf{Atividade:} construir no CrystalWalk as três variantes cúbicas (simples, corpo centrado, face centrada) e responder:
+\begin{itemize}
+  \item Quantos átomos por célula?
+  \item Como muda o FEA?
+\end{itemize}
+\end{lessonplan}
