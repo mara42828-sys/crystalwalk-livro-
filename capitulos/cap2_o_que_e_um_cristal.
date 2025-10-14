@@ -1,0 +1,29 @@
+\chapter{O que é um cristal? (Aula teórica + prática)}
+
+\section{Conteúdo}
+Definição de cristal, tipos: metais, ligas, iônicos, covalentes e moleculares. (Resumo teórico e imagens de referência).
+
+\section{Plano de aula}
+\begin{lessonplan}
+\textbf{Duração:} 1 aula (50--90 min). \\
+\textbf{Materiais:} Computador por aluno (ou pares), acesso a CrystalWalk, projetor. \\
+\textbf{Objetivos de aprendizagem:}
+\begin{itemize}
+  \item Reconhecer os tipos principais de cristais.
+  \item Relacionar estrutura cristalina a propriedades macroscópicas.
+\end{itemize}
+\textbf{Passos na aula (com CrystalWalk):}
+\cwstep{Abrir CrystalWalk e mostrar a tela inicial e o tutorial "Passo a passo".}
+\cwstep{Selecionar uma rede simples (ex.: cúbica) e demonstrar repetição de células (Bravais Lattice Repetition).}
+\cwstep{Pedir aos alunos que construam (em pares) uma estrutura metálica simples e identifiquem a célula unitária.}
+\textbf{Atividade:} discutir em grupos como a estrutura afeta condutividade térmica/ elétrica.
+\end{lessonplan}
+
+\section{Quiz}
+\begin{quizbox}
+\begin{enumerate}
+  \item Explique, em até 3 linhas, a diferença entre cristal e material amorfo.
+  \item Cite dois exemplos de materiais cristalinos e seu tipo (iônico, covalente, etc).
+  \item (Prático) No CrystalWalk, qual é a diferença visível entre uma célula cúbica simples e cúbica de face centrada?
+\end{enumerate}
+\end{quizbox}
