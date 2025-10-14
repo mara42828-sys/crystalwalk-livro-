@@ -1,0 +1,20 @@
+\chapter{Planos e direções de Miller}
+
+\section{Conteúdo}
+Como calcular índices de Miller (passo a passo). Visualização de planos {hkl} e direções [uvw] no CrystalWalk.
+
+\section{Laboratório}
+\begin{lessonplan}
+\textbf{Duração:} 1 aula. \\
+\textbf{Passos:}
+\cwstep{Selecionar uma célula unitária e traçar o plano (hkl) usando a ferramenta de planos do CrystalWalk.}
+\cwstep{Explorar famílias de planos e como elas aparecem na visualização 3D.}
+\end{lessonplan}
+
+\section{Quiz}
+\begin{quizbox}
+\begin{enumerate}
+  \item Dado o plano que intercepta os eixos em (1/2, 1, 1), quais são os índices de Miller? Mostre o cálculo.
+  \item No CrystalWalk, qual comando/ícone permite exibir planos cristalográficos?
+\end{enumerate}
+\end{quizbox}
