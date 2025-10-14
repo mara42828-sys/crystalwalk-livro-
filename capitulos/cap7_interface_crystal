@@ -1,0 +1,15 @@
+\chapter{O CrystalWalk e sua interface — tutorial do professor}
+
+\section{Conteúdo}
+Mapeamento dos ícones, configurações, importação/exportação, dicas para apresentações em sala.
+
+\section{Roteiro de demonstração (7 passos)}
+\begin{enumerate}
+  \item Abrir o CrystalWalk e mostrar o tutorial interno.
+  \item Escolher rede de Bravais.
+  \item Inserir motivo (escolher elemento na tabela periódica do programa).
+  \item Ajustar parâmetros (a,b,c e ângulos).
+  \item Repetir a malha para gerar um empilhamento.
+  \item Ativar exibição de planos/direções de Miller.
+  \item Exportar imagem/JSON para atividade prática.
+\end{enumerate}
