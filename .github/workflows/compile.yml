@@ -11,7 +11,7 @@ jobs:
     
     steps:
     - name: Checkout código
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
       
     - name: Compilar LaTeX
       uses: xu-cheng/latex-action@v2
@@ -21,7 +21,7 @@ jobs:
         args: "-shell-escape -interaction=nonstopmode"
         
     - name: Fazer upload do PDF
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: CrystalWalk-Livro
         path: main.pdf
