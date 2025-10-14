@@ -1,0 +1,7 @@
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Referências}
+\begin{thebibliography}{9}
+\bibitem{candioto2022}
+K.\,C.\,G. Candioto \& G.\,L.\,M. Monteiro, \emph{CrystalWalk: modelagem de estruturas cristalinas às suas mãos}, Edições Brasil / UniEditoras, 2022. (Documento-base adaptado)
+\end{thebibliography}
