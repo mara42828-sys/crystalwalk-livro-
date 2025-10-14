@@ -1,58 +1,70 @@
-% capa.tex - Capa do CrystalWalk
-\newcommand{\MakeCover}{
-  \begin{titlepage}
-    \thispagestyle{empty}
-    \begin{tikzpicture}[remember picture,overlay]
-      % fundo azul
-      \fill[crystalblue] (current page.south west) rectangle (current page.north east);
+% main.tex — Livro completo CrystalWalk
 
-      % padrão de rede atrás levemente
-      \begin{scope}[shift={(current page.center)}, scale=1]
-        \foreach \i in {-6,-4,-2,0,2,4,6} {
-          \foreach \j in {-8,-6,-4,-2,0,2,4,6,8} {
-            \pgfmathsetmacro{\ox}{\i*0.9}
-            \pgfmathsetmacro{\oy}{\j*0.6}
-            \fill[crystalaccent,opacity=0.03] (\ox,\oy) circle (0.06);
-            \ifnum\i>-7
-              \draw[crystalaccent,opacity=0.02] (\ox,\oy) -- (\ox+0.9,\oy+0.6);
-            \fi
-          }
-        }
-      \end{scope}
+\documentclass[12pt,openright,oneside]{book} % única classe do projeto
 
-      % título
-      \node[align=center,text width=0.86\paperwidth] at ($(current page.north) + (0,-3.0cm)$) {
-        {\Huge\bfseries\textcolor{crystalaccent}{CRYSTAL WALK}\par}
-      };
-      \node[align=center,text width=0.86\paperwidth] at ($(current page.north) + (0,-5.0cm)$) {
-        {\large\textcolor{crystalaccent}{\textsc{Metodologia, Aplicação e Impactos no Ensino de Materiais — Guia do Professor com Atividades e Quizzes}}\par}
-      };
+% --- Configurações e pacotes ---
+\input{crystalwalk/preambulo}  % só pacotes, cores, comandos
 
-      % cristal simples em linhas
-      \begin{scope}[shift={(current page.center)}, yshift=-1.2cm, scale=1.05]
-        \draw[line width=0.9pt,crystalaccent] (0,1.2) -- (0.6,0.2) -- (1.6,0.2) -- (2.2,1.2) -- (1.2,2.4) -- cycle;
-        \draw[line width=0.9pt,crystalaccent] (0.6,0.2) -- (0.6,-1.0);
-        \draw[line width=0.9pt,crystalaccent] (1.6,0.2) -- (1.6,-1.0);
-        \draw[line width=0.9pt,crystalaccent] (1.2,2.4) -- (1.2,4.2);
-        \draw[line width=0.9pt,crystalaccent] (-0.8,0.8) -- (0.6,-1.0);
-        \draw[line width=0.9pt,crystalaccent] (2.8,0.8) -- (1.6,-1.0);
-      \end{scope}
+\begin{document}
 
-      % autores
-      \node[align=center,text width=0.86\paperwidth] at ($(current page.south) + (0,3.2cm)$) {
-        {\large\textcolor{crystalaccent}{\begin{tabular}{c}
-          Aline Bueno da Silva Cruz \\
-          Ana Luiza Rosa Parmelston \\
-          Mara Rúbia Gomes Carvalho \\
-          Natália Aparecida Santos Souza \\
-          Alex Manhone
-        \end{tabular}}\par}
-      };
+% --- Capa ---
+\input{crystalwalk/capa}
+\MakeCover
 
-      % nota de edição
-      \node[anchor=south,text width=0.86\paperwidth] at ($(current page.south) + (0,1.6cm)$) {
-        {\footnotesize\textcolor{crystalaccent}{Edição Universidade / 2025}\par}
-      };
-    \end{tikzpicture}
-  \end{titlepage}
-}
+% --- Página de créditos / direitos ---
+\cleardoublepage
+\thispagestyle{empty}
+\vspace*{3cm}
+\begin{center}
+\small
+\textbf{CRYSTAL WALK}\\
+{\it Metodologia, Aplicação e Impactos no Ensino de Materiais — Guia do Professor com Atividades e Quizzes}\\[1em]
+Autores: Aline Bueno da Silva Cruz, Ana Luiza Rosa Parmelston, Mara Rúbia Gomes Carvalho,\\
+Natália Aparecida Santos Souza e Alex Manhone.\\[1em]
+Edição: 1ª edição — 2025\\[1em]
+ISBN: \textit{(inserir número, se houver)}\\[2em]
+\end{center}
+
+\noindent\textbf{Nota:} Este guia adapta e organiza o conteúdo do manual técnico \emph{CrystalWalk: modelagem de estruturas cristalinas às suas mãos} como material didático e roteiro para aulas com atividades práticas e quizzes.
+
+\clearpage
+
+% --- Sumário ---
+\pagenumbering{roman}
+\setcounter{page}{1}
+\tableofcontents
+\cleardoublepage
+
+% --- Corpo do livro ---
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\input{crystalwalk/capitulos/cap1_guia_prof}
+\input{crystalwalk/capitulos/cap2_o_que_e_um_cristal}
+\input{crystalwalk/capitulos/cap3_redes_bravais}
+\input{crystalwalk/capitulos/cap4_parametros_rede}
+\input{crystalwalk/capitulos/cap5_estruturas_celulas}
+\input{crystalwalk/capitulos/cap6_miller}
+\input{crystalwalk/capitulos/cap7_interface_crystal}
+\input{crystalwalk/capitulos/cap8_metodologia_avaliacao.}
+\input{crystalwalk/capitulos/cap9_projetos}
+
+% --- Apêndice ---
+\appendix
+\input{crystalwalk/capitulos/apendice_pdf}
+
+% --- Sobre os autores ---
+\input{crystalwalk/capitulos/sobre_autores}
+
+% --- Referências ---
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{Referências}
+\begin{thebibliography}{9}
+\bibitem{candioto2022}
+K.\,C.\,G. Candioto \& G.\,L.\,M. Monteiro,
+\emph{CrystalWalk: modelagem de estruturas cristalinas às suas mãos},
+Edições Brasil / UniEditoras, 2022.
+\end{thebibliography}
+
+\end{document}
