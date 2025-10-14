@@ -1,0 +1,21 @@
+\chapter{As 14 redes espaciais de Bravais}
+
+\section{Conteúdo}
+Descrição das 14 redes, representação, símbolos (P, I, F, C), relação com os 7 sistemas cristalinos.
+
+\section{Plano de aula}
+\begin{lessonplan}
+\textbf{Duração:} 1--2 aulas. \\
+\textbf{Atividade prática:} cada grupo escolhe uma rede e produz uma apresentação curta com captura de tela do CrystalWalk mostrando:
+\begin{itemize}
+  \item a malha escolhida,
+  \item repetições no espaço,
+  \item propriedades qualitativas (ex.: densidade de empacotamento).
+\end{itemize}
+\end{lessonplan}
+
+\section{Exercícios}
+\begin{enumerate}
+  \item Calcule o fator de empacotamento atômico (FEA) para um exemplo (orientações e fórmulas).
+  \item No CrystalWalk: criar e exportar uma imagem PNG da malha escolhida.
+\end{enumerate}
