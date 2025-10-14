@@ -1,0 +1,13 @@
+\chapter{Parâmetros de rede}
+
+\section{Conteúdo}
+Definição de $a$, $b$, $c$ e ângulos $\alpha$, $\beta$, $\gamma$; exemplo de cálculos.
+
+\section{Plano de aula (laboratório)}
+\begin{lessonplan}
+\textbf{Duração:} 1 aula prática. \\
+\textbf{Objetivo:} medir parâmetros de rede (simulados) e relacioná-los à densidade. \\
+\textbf{Passos:}
+\cwstep{No CrystalWalk, ajustar os comprimentos da malha e medir distâncias entre pontos do motivo.}
+\cwstep{Comparar efeitos de alterar 'a' no empacotamento e em propriedades macroscópicas.}
+\end{lessonplan}
