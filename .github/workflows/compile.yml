@@ -1,0 +1,28 @@
+name: Compile LaTeX to PDF
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout código
+      uses: actions/checkout@v3
+      
+    - name: Compilar LaTeX
+      uses: xu-cheng/latex-action@v2
+      with:
+        root_file: main.tex
+        compiler: pdflatex
+        args: "-shell-escape -interaction=nonstopmode"
+        
+    - name: Fazer upload do PDF
+      uses: actions/upload-artifact@v3
+      with:
+        name: CrystalWalk-Livro
+        path: main.pdf
+        retention-days: 90
